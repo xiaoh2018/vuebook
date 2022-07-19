@@ -3,8 +3,8 @@ home: true
 <!-- heroImage: /img/logo.png -->
 heroText: 互联网线报站
 tagline: 🚀互联网人日常小记录，涵盖互联网各类小爱好，小经验、小软件、小生活
-actionText: 开始使用 →:开始使用 →
-actionLink: /pages/easyget/
+actionText: 查看资源清单 →
+actionLink: /pages/update/
 
 bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
@@ -54,37 +54,8 @@ postList: none
   link: https://baomidou.com/
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
-  
 ```
 :::
-::: cardList 3
-```yaml
-# - name: OpenHarmony
-#   desc: 开放原子开源基金会
-#   link: https://docs.openharmony.cn/pages/000000/
-#   bgColor: '#f1f1f1'
-#   textColor: '#2A3344'
-- name: MyBatis-Plus官网
-  desc: 🚀为简化开发而生
-  link: https://baomidou.com/
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-- name: Deepin 社区
-  desc: Deepin 应用开发技术分享、DTK开发经验等
-  link: https://docs.deepin.org
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-- name: VForm官网
-  desc: 低代码表单优选方案，拖拽式设计，一键生成源码
-  link: http://www.vform666.com
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-  
-```
-:::
-
-
-
 
 <br/> 
 
