@@ -3,11 +3,7 @@ const htmlModules = require('./config/htmlModules.js');
 
 
 module.exports = {
-markdown: {
-    extendMarkdown: md => {
-      md.use(require("markdown-it-disable-url-encode"));
-    }
-  },
+
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
@@ -203,7 +199,9 @@ markdown: {
   markdown: {
     // lineNumbers: true,
 extractHeaders: ['h2', 'h3', 'h4', 'h5', 'h6'], // 提取标题到侧边栏的级别，默认['h2', 'h3']
-	
+extendMarkdown: md => {
+      md.use(require("markdown-it-disable-url-encode"));
+    },	
   },
 
   // 监听文件变化并重新构建
