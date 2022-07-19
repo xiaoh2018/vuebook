@@ -19,8 +19,8 @@ markdown: {
     ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
 
-    ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
-    ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+    // ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
+  //  ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
   ],
 
   // 主题配置
@@ -81,7 +81,7 @@ markdown: {
 
     // sidebarOpen: false, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
-      showToArticle: false, // 显示到文章页底部，默认true
+      showToArticle: true, // 显示到文章页底部，默认true
       // moreArticle: '/archives' // “更多文章”跳转的页面，默认'/archives'
     },
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
@@ -99,7 +99,7 @@ markdown: {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
+      name: '互联网线报站', // 必需
       href: 'https://github.com/xugaoyi' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
@@ -124,7 +124,7 @@ markdown: {
     },
     footer: { // 页脚信息
       createYear: 2022, // 博客创建年份
-      copyrightInfo: 'Evan Xu | MIT License', // 博客版权信息，支持a标签
+      copyrightInfo: 'xiaoh2018 | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
   },
