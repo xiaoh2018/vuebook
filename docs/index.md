@@ -19,7 +19,7 @@ bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | no
     details: 专为阅读设计的UI，配合多种颜色模式、可关闭的侧边栏和导航栏，带给你一种沉浸式阅读体验 -->
 
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
-postList: none
+postList: simple
 ---
 
 <br/>
@@ -44,23 +44,17 @@ postList: none
   link: https://docs.deepin.org
   bgColor: '#f1f1f1'
   textColor: '#2A3344'
-- name: VForm官网
-  desc: 低代码表单优选方案，拖拽式设计，一键生成源码
-  link: http://www.vform666.com
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-- name: MyBatis-Plus官网
-  desc: 🚀为简化开发而生
-  link: https://baomidou.com/
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
 ```
 :::
 
 <br/> 
 
-## 💎 公众号
-`有趣研究社`是本人对各种有趣的、好玩的、沙雕的创意和想法以在线小网站或者文章的形式表达出来，比如：
+ 
+
+## 🎉有用的网站
+`有趣研究社`是本人收集的一些有用好玩的小网站
+
+比如：
 
 - [小霸王游戏机](https://game.xugaoyi.com)
 - [爱国头像生成器](https://avatar.xugaoyi.com/)
@@ -68,27 +62,14 @@ postList: none
 
 还有更多好玩的等你去探索吧~
 
-::: center
-<img src="/img/qrcode/gzh.jpg"  style="width:190px;" />
-:::
-
-<br/> 
-
-## 🎉好玩的网站
-`有趣研究社`是本人对各种有趣的、好玩的、沙雕的创意和想法以在线小网站或者文章的形式表达出来，比如：
-- [小霸王游戏机](https://game.xugaoyi.com)
-- [爱国头像生成器](https://avatar.xugaoyi.com/)
-- [到账语音生成器](https://zfb.xugaoyi.com/)
-
-还有更多好玩的等你去探索吧~
-
+好玩有用网站导航：
 
 <br/> 
 
 ## ⚡ 反馈与交流
 
-在使用过程中有任何问题和想法，请给我提 [Issue](https://github.com/xugaoyi/vuepress-theme-vdoing/issues)。
-你也可以在Issue查看别人提的问题和给出解决方案。
+在使用过程中有任何问题和想法，请给我微信wechina008给我留言
+会定期把常见问题更新在本网站
 
 或者加入我们的交流群：
 
