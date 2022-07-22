@@ -23,5 +23,10 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.12.3",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "highlight": "^0.2.4",
+    "svgo": "^2.8.0"
   }
 }

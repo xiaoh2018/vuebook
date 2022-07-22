@@ -22,12 +22,12 @@ bannerBg: none # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | no
 postList: none
 ---
 
-
-
 <br/>
 
 ## 🎖特别关注
+
 ::: cardList 2
+
 ```yaml
 # - name: OpenHarmony
 #   desc: 开放原子开源基金会
