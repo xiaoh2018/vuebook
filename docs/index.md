@@ -1,7 +1,7 @@
 ---
 home: true
-<!-- heroImage: /img/logo.png -->
-heroText: 互联网线报站
+heroImage: /img/web2.png
+heroText: 
 tagline: 🚀互联网人日常小记录，涵盖互联网各类小爱好，小经验、小软件、小生活
 actionText: 查看资源清单 →
 actionLink: /pages/update/
@@ -61,6 +61,7 @@ postList: none
 
 ## 💎 公众号
 `有趣研究社`是本人对各种有趣的、好玩的、沙雕的创意和想法以在线小网站或者文章的形式表达出来，比如：
+
 - [小霸王游戏机](https://game.xugaoyi.com)
 - [爱国头像生成器](https://avatar.xugaoyi.com/)
 - [到账语音生成器](https://zfb.xugaoyi.com/)
@@ -68,7 +69,7 @@ postList: none
 还有更多好玩的等你去探索吧~
 
 ::: center
-<img src="https://fastly.jsdelivr.net/gh/xugaoyi/image_store@master/blog/qrcode.zdqv9mlfc0g.jpg"  style="width:190px;" />
+<img src="/img/qrcode/gzh.jpg"  style="width:190px;" />
 :::
 
 <br/> 
@@ -95,19 +96,19 @@ postList: none
   <tbody>
     <tr>
       <td align="center" valign="middle">
-        <img :src="$withBase('/img/qrcode/wxq.png')" class="no-zoom" style="width:120px;margin: 10px;">
-        <p>vdoing微信群(添加我微信备注"进群")</p>
-      </td>
-      <td align="center" valign="middle">
-        <img :src="$withBase('/img/qrcode/qqq.webp')" alt="群号: 694387113" class="no-zoom" style="width:120px;margin: 10px;">
-        <p>vdoing QQ群: 694387113</p>
+       
+
+ <img :src="$withBase('/img/qrcode/wxq.png')" class="no-zoom" style="width:120px;margin: 10px;">
+        <p>easyget微信群(添加我微信备注"进群")</p>
       </td>
     </tr>
   </tbody>
 </table>
 
 
-<!-- AD -->
+
+
+
 <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
 <style>
   .page-wwads{
