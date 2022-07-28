@@ -9,9 +9,9 @@ commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
 
-# 生成静态文件
+# 生成静态文件 复制cps文件夹到disk
 npm run build
-
+cp -r cps/ $dist_path
 # 进入生成的文件夹
 cd $dist_path
 
@@ -22,3 +22,5 @@ git push -f $push_addr HEAD:$push_branch
 
 cd -
 rm -rf $dist_path
+
+

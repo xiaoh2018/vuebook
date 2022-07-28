@@ -17,9 +17,9 @@ git commit -m "deploy, $commit_info"
 git push -f $push_addr HEAD:master
 
 
-# 生成静态文件
+# 生成静态文件 复制cps文件夹到disk
 npm run build
-
+cp -r cps/ $dist_path
 # 进入生成的文件夹
 cd $dist_path
 
