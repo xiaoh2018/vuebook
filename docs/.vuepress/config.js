@@ -7,12 +7,12 @@ module.exports = {
   theme: 'vdoing', // 使用依赖包主题
   // theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
 
-  title: "互联网线报站",
-  description: '一个基于VuePress的 知识管理&博客 主题',
+  title: ">Easyget让一切变得更简单",
+  description: 'Easyget让一切变得更简单-互联网人日常小记录，涵盖互联网各类小爱好，小经验、小软件、小生活分享',
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: 'Easyget 让一切变得更简单' }],
+    ['meta', { name: 'keywords', content: 'Easyget,www.91easyget.com,easyget.vercel.app,抖音OBS小助手,抖店黑科技,互联网线报站，视频号下载工具' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
 	['script', { src: 'https://sdk.51.la/js-sdk-pro.min.js?id=JlPE8IEo9PbBQXu9&ck=JlPE8IEo9PbBQXu9', id:'LA_COLLECT', charset: 'UTF-8'}]
 	
