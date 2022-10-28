@@ -26,8 +26,8 @@ module.exports = {
       { text: '首页', link: '/' },
       {
         text: '文档总导航', link: '/pages/update/'},
-	  {
-            text: '软件列表', items: [
+	  /* {
+            text: '原创软件', items: [
               { text: 'easyget【简易抓包工具】', link: '/pages/easyget/' },
               { text: '快站短地址生成器', link: '/pages/kurl' },
               { text: '公众号关注页面获取工具', link: '/pages/gzhgz//' },
@@ -36,11 +36,11 @@ module.exports = {
               { text: '抖店无货源【商品详情采集】', link: '/pages/dycj/' },
               { text: '抖店无货源【PDD订单物流批量查询】', link: '/pages/pddget/' },
             ]
-          },
-      
-      { text: '网络资源', link: '/pages/ziyuan/' },
-      { text: '赚钱项目', link: '/pages/money/' },
-      { text: '羊毛资讯', link: '/pages/yangmao/' },
+          }, */
+		  
+		  { text: '我的博客', link: '/categories/' },
+		  { text: '我的博客', link: '/categories/' },
+	   { text: '留言板', link: 'https://support.qq.com/product/421444' },
       { text: '支持&联系作者', link: '/pages/about/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
@@ -59,7 +59,7 @@ module.exports = {
 
     sidebarOpen: true, // 初始状态是否打开侧边栏，默认true
     updateBar: { // 最近更新栏
-      showToArticle: true, // 显示到文章页底部，默认true
+      showToArticle: false, // 显示到文章页底部，默认true
      moreArticle: '/categories/' // “更多文章”跳转的页面，默认'/archives'
     },
     // titleBadge: false, // 文章标题前的图标是否显示，默认true
