@@ -38,7 +38,7 @@ module.exports = {
             ]
           }, */
 		  
-		  { text: '我的博客', link: '/categories/' },
+		  { text: '原创软件', link: '/pages/easyget' },
 		  { text: '我的博客', link: '/categories/' },
 	   { text: '留言板', link: 'https://support.qq.com/product/421444' },
       { text: '支持&联系作者', link: '/pages/about/' },
