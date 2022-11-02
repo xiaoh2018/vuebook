@@ -12,6 +12,7 @@ push_branch=gh-pages # 推送的分支
 # 生成静态文件 复制cps文件夹到disk
 npm run build
 cp -r cps/ $dist_path
+cp -r 3vhost/ $dist_path
 # 进入生成的文件夹
 cd $dist_path
 
