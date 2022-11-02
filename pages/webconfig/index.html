@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>iis虚拟主机多个域名绑定不同目录 | Easyget让一切变得更简单</title>
+    <meta name="generator" content="VuePress 1.9.2">
+    <link rel="icon" href="/img/favicon.ico">
+    <script src="https://sdk.51.la/js-sdk-pro.min.js?id=JlPE8IEo9PbBQXu9&amp;ck=JlPE8IEo9PbBQXu9" id="LA_COLLECT" charset="UTF-8"></script>
+    <meta name="description" content="Easyget让一切变得更简单-互联网人日常小记录，涵盖互联网各类小爱好，小经验、小软件、小生活分享">
+    <meta name="keywords" content="Easyget,www.91easyget.com,easyget.vercel.app,抖音OBS小助手,抖店黑科技,互联网线报站，视频号下载工具">
+    <meta name="theme-color" content="#11a8cd">
+    
+    <link rel="preload" href="/assets/css/0.styles.f0e0bb97.css" as="style"><link rel="preload" href="/assets/js/app.1f3126ba.js" as="script"><link rel="preload" href="/assets/js/2.850500b1.js" as="script"><link rel="preload" href="/assets/js/13.839c782b.js" as="script"><link rel="prefetch" href="/assets/js/10.fdaa9d8c.js"><link rel="prefetch" href="/assets/js/11.df563b1c.js"><link rel="prefetch" href="/assets/js/12.8b77a49d.js"><link rel="prefetch" href="/assets/js/14.cc773fe1.js"><link rel="prefetch" href="/assets/js/15.b822f48b.js"><link rel="prefetch" href="/assets/js/16.642821cd.js"><link rel="prefetch" href="/assets/js/17.10839eac.js"><link rel="prefetch" href="/assets/js/3.89570a7b.js"><link rel="prefetch" href="/assets/js/4.63d59a78.js"><link rel="prefetch" href="/assets/js/5.2cb1902f.js"><link rel="prefetch" href="/assets/js/6.cb36c985.js"><link rel="prefetch" href="/assets/js/7.a03ffa73.js"><link rel="prefetch" href="/assets/js/8.756898be.js"><link rel="prefetch" href="/assets/js/9.77e3e3d7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f0e0bb97.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/logo.png" alt="Easyget让一切变得更简单" class="logo"> <span class="site-name can-hide">Easyget让一切变得更简单</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/pages/update/" class="nav-link">文档总导航</a></div><div class="nav-item"><a href="/archives/" class="nav-link">更新记录</a></div><div class="nav-item"><a href="/pages/easyget/" class="nav-link">原创软件</a></div><div class="nav-item"><a href="/categories/" class="nav-link">我的博客</a></div><div class="nav-item"><a href="https://support.qq.com/product/421444" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言板
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/pages/about/" class="nav-link">支持&amp;联系作者</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><!----> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/pages/update/" class="nav-link">文档总导航</a></div><div class="nav-item"><a href="/archives/" class="nav-link">更新记录</a></div><div class="nav-item"><a href="/pages/easyget/" class="nav-link">原创软件</a></div><div class="nav-item"><a href="/categories/" class="nav-link">我的博客</a></div><div class="nav-item"><a href="https://support.qq.com/product/421444" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  留言板
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/pages/about/" class="nav-link">支持&amp;联系作者</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>个人学习记录</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/pages/fanyi/" class="sidebar-link">Google网页翻译替代品</a></li><li><a href="/pages/webconfig/" aria-current="page" class="active sidebar-link">iis虚拟主机多个域名绑定不同目录</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-06225672><div class="articleInfo" data-v-06225672><ul class="breadcrumbs" data-v-06225672><li data-v-06225672><a href="/" title="首页" class="iconfont icon-home router-link-active" data-v-06225672></a></li> <li data-v-06225672><a href="/categories/?category=%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95" title="分类" data-v-06225672>个人学习记录</a></li><li data-v-06225672><a href="/categories/?category=%E4%B8%AA%E4%BA%BA%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95" title="分类" data-v-06225672>个人学习记录</a></li></ul> <div class="info" data-v-06225672><div title="作者" class="author iconfont icon-touxiang" data-v-06225672><a href="https://www.91easyget.com/" target="_blank" title="作者" class="beLink" data-v-06225672>互联网线报站</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-06225672><a href="javascript:;" data-v-06225672>2022-07-27</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-title">目录</div> <div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABH1JREFUSA3tVl1oHFUUPmdmd2ltklqbpJDiNnXFmgbFktho7YMPNiJSSZM0+CAYSkUELVhM6YuwIPpgoOKDqOBDC0XE2CQoNtQXBUFTTcCi+Wlh1V2TQExsUzcltd3M9Tt3ZjZzZ2fT+OJTL8yeM+eee757fmeJbq//KQL8X3DUSFOcfr7cRsRtxNQMWueeVzOkaITIGqQHNg5y8+jNW9ldM7A6nTpAjuolUikAwq7CE3WcM2RRDz+XGVgN3FptU/aUSlvq9Pa3iZ1+sgAqJyyAFqkipd9dqiwHF3P65YycLWc/6sqGrvoEoIp6DOFaX5h6+dnfjkWprwqsPk0dUGq5vySwDImC10KxFHgGL1SWoc92O3eVht09qdXNH11I2SsTsJYqMWzihqGMi+A+Garf3BAuuLI5oGlULyNfyB/HYNujwktOfRrMr5t77NmevqaUopx0grnKAyvVpmwUDB4x6FPXuGvYLTDwWsejwgtgkYKPqRJg8SV6xaiZ3ZTppGneS4yfH5/66fZSDHv+QZci/+h5c5UHtpy67JUqGppM0sh0Nc1dW6/N1W5Yoqat8/TU/VnadmdeW2PLLSyh0cvxBs3KbqTmwYPpxN4do/mzE8nEpvX/UMu2Wbp74zUAK5q6WkHns7V0eWkdPbPzd3rxkTGybadYySumVzhcaJFbs5UrEkQ/+CK8gF5dnh/6ciIZ73gwQ927L1IitoxKLXYP3SjYdOrHHfTZhRRlFyrorafPk20B3HPD1y2G3qKZME5Jcf3t/HUC13/8tSd++vqFveMUTwAUxSUFI1QekR1+bIze3D9MF2aq6cPvG72CgnldWCFqyRw3lwH8ZMerjTD9ElRO7Gv44wNpC90aASqGfVlz/Rx17srQ57/UU26hkhQqUB7dBR71WmzQhHUnblGmVOEw0jhbV1n9OlXUDCIRGaNV5Jp43N516fN7JmnTHdfp7Hgy0luO4aMhtkLL8Bi3bUWYvzh5Mn1dTxrL6QmGuRhGL/TiTTxRoEdTszSaq9GR0NGA3KdkOz3hqSV3MIDhQ5IVX/Ivx3umBti2es2h4eZby7x8br1rkf7Mo90AqC8aQ3sJeNzqFRu+vSANAQe3PL7l0HGOAdwDCeZYvNKeoZp1Qfs6Aipndh86HmFRi0LAnEO47wsqM6cdfjh3jBPUzhZy7nvlUfFsamED1VQt6aISHVymXZ/B2aCtIG8AI8xfobj2d3en1wWVhOeHELKmLQ1s211s88comkv4UCwWyF787mJdYXtNfhKAXVqnKTq8QZvGAGGOfaTo5pGZ/PwbUCr5+DPr/1J92JNHr9aOl/F3iI5+O1nfybsGxoimvZ3ViWSluDITw3P37mypheDIPY0tw7+O/5ApbkYw+zpfaUVu32Pi98+defdUhEpZkRFq0aqyNh9FuL9hpYbEm6iwi0z2REd09ZmyENEbuhjDWzKvZXTqKYaBIr3tt5kuPtQBZFvEUwHt60vfCNu41XsksH9Ij1BMMz1Y0OOunHNShFIP5868g5zeXmuLwL9T4b6Q2+KejgAAAABJRU5ErkJggg==">iis虚拟主机多个域名绑定不同目录<!----></h1> <div class="page-slot page-slot-top">
+    <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+    <style>
+      .page-wwads{
+        width:100%!important;
+        min-height: 0;
+        margin: 0;
+      }
+      .page-wwads .wwads-img img{
+        width:80px!important;
+      }
+      .page-wwads .wwads-poweredby{
+        width: 40px;
+        position: absolute;
+        right: 25px;
+        bottom: 3px;
+      }
+      .wwads-content .wwads-text, .page-wwads .wwads-text{
+        height: 100%;
+        padding-top: 5px;
+        display: block;
+      }
+  </style>
+  </div> <div class="theme-vdoing-content content__default"><h3 id="🧡webconfig配置"><a href="#🧡webconfig配置" class="header-anchor">#</a> 🧡webconfig配置</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token prolog">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>configuration</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>system.webServer</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>staticContent</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mimeMap</span> <span class="token attr-name">fileExtension</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>.woff2<span class="token punctuation">&quot;</span></span> <span class="token attr-name">mimeType</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>application/x-font-woff<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>staticContent</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rewrite</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rules</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rule</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>surl<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>match</span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>^.*$<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ignoreCase</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>conditions</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>add</span> <span class="token attr-name">input</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{HTTP_HOST}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">pattern</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>^此处填写域名$<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>conditions</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>action</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Rewrite<span class="token punctuation">&quot;</span></span> <span class="token attr-name">url</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>此处填写跳转目录/{R:0}<span class="token punctuation">&quot;</span></span> <span class="token attr-name">appendQueryString</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span> <span class="token attr-name">logRewrittenUrl</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>false<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rule</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rules</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>rewrite</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>system.webServer</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>configuration</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="🧡php控制"><a href="#🧡php控制" class="header-anchor">#</a> 🧡php控制</h3> <div class="language-html extra-class"><pre class="language-html"><code>
+<span class="token prolog">&lt;?php
+
+switch($_SERVER[&quot;HTTP_HOST&quot;]){
+
+case &quot;welive.eu.org&quot;;
+
+header(&quot;location:bbs/&quot;);
+
+break;
+
+case &quot;wetool.eu.org&quot;;
+
+header(&quot;location:faka/&quot;);
+
+break;
+
+case &quot;obstool.eu.org&quot;;
+
+header(&quot;location:obs/&quot;);
+
+break;
+
+}
+
+?&gt;</span>
+</code></pre></div></div></div>  <div class="page-edit"><!----> <div class="tags"><a href="/tags/?tag=%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA" title="标签">#虚拟主机</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/11/02, 21:56:00</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/pages/fanyi/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">Google网页翻译替代品</div></a> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/pages/fanyi/" class="prev">Google网页翻译替代品</a></span> <!----></p></div></div></div> <!----></main></div> <div class="footer"><div class="icons"><a href="mailto:fenpay@outlook.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://space.bilibili.com/43603451" title="bilibili" target="_blank" class="iconfont icon-bilibili"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2022-2022
+    <span>xiaoh2018 | MIT License</span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1f3126ba.js" defer></script><script src="/assets/js/2.850500b1.js" defer></script><script src="/assets/js/13.839c782b.js" defer></script>
+  </body>
+</html>
