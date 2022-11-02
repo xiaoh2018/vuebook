@@ -37,7 +37,8 @@ module.exports = {
               { text: '抖店无货源【PDD订单物流批量查询】', link: '/pages/pddget/' },
             ]
           }, */
-		  
+		
+		  { text: '更新记录', link: '/archives/' },
 		  { text: '原创软件', link: '/pages/easyget/' },
 		  { text: '我的博客', link: '/categories/' },
 	   { text: '留言板', link: 'https://support.qq.com/product/421444' },
